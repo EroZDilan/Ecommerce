@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false, // Importante - este evita errores de inicialización de propiedades
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true, // CRUCIAL para que funcionen los decoradores
+    "emitDecoratorMetadata": true, // CRUCIAL para que funcionen los decoradores
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
